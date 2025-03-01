@@ -2,14 +2,14 @@
     <body>
         <div id="div1">jghgjkg</div>
         <script>
-            const div1 = document.getElementById('div1');
+            let div1 = document.getElementById('div1');
             div1.style.backgroundColor = 'green';
             setInterval(() => {
-                if (div1.style.backgroundColor = 'green') {
+                if (div1.style.backgroundColor == 'green') {
                     div1.style.backgroundColor = 'red';                
                 }
                 else{
-                    div1.style.backgroundColor = 'red';
+                    div1.style.backgroundColor = 'green';
                 }
             }, 500);
 
