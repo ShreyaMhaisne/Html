@@ -1,4 +1,47 @@
-/* external css */
-.class1{
-    background-color: rgb(72, 32, 3);
+body{
+    height: 0;
+    width: 0;
+}
+#container{
+height: 460px;
+width: 350px;
+padding-top: 5px;
+margin-top: 130px;
+margin-left: 500px;
+border-radius: 10px;
+border: 1px solid rgb(156, 154, 154);
+box-shadow: -2px -2px 2px white;
+background-color: black;
+}
+#dis{
+height: 70px;
+width: 330px;
+border-radius: 10px;    
+box-shadow: none;
+border:none;
+color: white;
+margin-left: 0;
+font-size:xx-large ;
+text-align: right;
+background-color: black;
+}
+input{
+margin-top: 12px ;
+margin-left: 20px;
+height: 60px;
+width: 60px;
+font-size: larger;
+border-radius: 40px;
+color: white;
+box-shadow: -2px -1px 2px rgb(108, 108, 108);
+background-color: black;
+}
+#ty{
+    width: 150px;
+    box-shadow: none;
+    border: none;
+    background-color: rgb(21, 198, 35);
+}
+.operator{
+    color: green;
 }

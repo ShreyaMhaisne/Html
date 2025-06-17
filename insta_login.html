@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insta login page with password correction</title>
+    <link rel="stylesheet" href="insta.css">
+</head>
+<body>
+    <div class="box1">
+    <div class="box2">
+     <h1><b>INSTAGRAM</b></h1>
+     <input type="text" placeholder="username or email" id="name">
+     <br><br>
+     <input type="password" placeholder="password" id="password">
+     <br> <br>
+     <button onclick="getclick()">Log in</button>
+     <h6>-------------------- OR ---------------------</h6>
+     <h4> Log in with Facebook</h4>
+    <h4 id="for">Forgot password?</h4>
+    </div>
+         <div class="box3">
+        <h5><b>Don't have an account?</b></h5>
+        <p><b>Sign up</b></p>
+         </div>
+    </div>
+    <h1 id="msg"></h1>
+</body>
+<script>
+    var ele1=document.getElementById("msg");
+    function getclick() {
+        var pass="shreya";
+        var pass1=document.getElementById("password").value;
+        if(pass.length<=6 && pass == pass1){
+            var ele=document.getElementById("name");
+            ele1.innerHTML="hello "+ele;
+        alert("login successfully");
+        }
+        else{
+            alert("password is not correct");
+            ele1.innerHTML="password is not correct plz enter corect one";
+        }
+    }
+
+</script>
+</html>
